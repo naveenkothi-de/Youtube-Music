@@ -15,11 +15,13 @@ Component: Query Engine AWS Service: Amazon Athena Purpose: Runs SQL directly on
 Component: Visualization AWS Service: Amazon QuickSight Purpose: Builds BI dashboards for insights.
 
 -> Datasets
+
 File: artists.csv Description: Artist ID, name, genre, followers, popularity
 File: albums.csv Description: Album ID, artist ID, name, release date
 File: tracks.csv Description: Track ID, album ID, duration, popularity
 
 --> Implementation Steps:
+
 Upload Raw Data to S3 (Staging Layer)
 Upload CSV files to the following S3 path:
 s3://youtube-music22/staging/
@@ -37,11 +39,11 @@ Transformations:
 
 Target Path: s3://youtube-music22/warehouse/
 1. Run AWS Glue Crawler
-2. • Data source: s3://youtube-music22/warehouse/
-3. • Crawler database: youtube_music
-4. • Output table: warehouse_youtube_music
-5. • Classification: parquet
-6. • Role: glue_access with S3 + CloudWatch + PassRole permissions.
+2. Data source: s3://youtube-music22/warehouse/
+3. Crawler database: youtube_music
+4. Output table: warehouse_youtube_music
+5. Classification: parquet
+6. Role: glue_access with S3 + CloudWatch + PassRole permissions.
    
 7. Query with Athena
    

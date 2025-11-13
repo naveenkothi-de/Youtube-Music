@@ -76,5 +76,8 @@ Results
 <img width="1536" height="1024" alt="Project Aws" src="https://github.com/user-attachments/assets/8d69920c-0b41-4a1d-9079-abdebbf4b035" />
 <img width="2560" height="1440" alt="Screenshot 2025-11-12 at 7 34 24 pm (2)" src="https://github.com/user-attachments/assets/2d509bbf-2641-4417-a596-029d32190f05" />
 
+<img width="1280" height="800" alt="Screenshot 2025-11-12 at 9 12 05 pm" src="https://github.com/user-attachments/assets/ec04afc1-d763-4282-8586-82301d5353ac" />
+<img width="1280" height="800" alt="Screenshot 2025-11-12 at 9 12 12 pm" src="https://github.com/user-attachments/assets/7afc4771-b5b4-4260-a1dd-f9fed4c6c219" />
+<img width="1280" height="800" alt="Screenshot 2025-11-12 at 9 13 16 pm" src="https://github.com/user-attachments/assets/10c3f977-f734-4292-b282-4b70a3ee9c40" />
 
 

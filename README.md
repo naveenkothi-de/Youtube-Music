@@ -23,7 +23,9 @@ File: tracks.csv Description: Track ID, album ID, duration, popularity
 --> Implementation Steps:
 
 Upload Raw Data to S3 (Staging Layer)
+
 Upload CSV files to the following S3 path:
+
 s3://youtube-music22/staging/
 Files: 
 • s3://youtube-music22/staging/artists.csv
@@ -48,24 +50,25 @@ Target Path: s3://youtube-music22/warehouse/
 7. Query with Athena
    
 8. Visualize with QuickSight
-    * Connect to Athena → choose youtube_music database.
-    * Import warehouse_youtube_music table.
-    * Create visuals:
-    * Top Artists by Followers
-    * Songs Released per Year
-    * Track Popularity Distribution
-    * Publish the dashboard for interactive exploration.
+
+* Connect to Athena → choose youtube_music database.
+* Import warehouse_youtube_music table.
+* Create visuals:
+* Top Artists by Followers
+* Songs Released per Year
+* Track Popularity Distribution
+* Publish the dashboard for interactive exploration.
       
 Tech Stack
 • AWS S3 – Data Lake Storage
- • AWS Glue ETL – Data Processing
+• AWS Glue ETL – Data Processing
 • AWS Glue Crawler & Catalog – Metadata Management
- • Amazon Athena – Serverless SQL
- • Amazon QuickSight – Visualization & BI
+• Amazon Athena – Serverless SQL
+• Amazon QuickSight – Visualization & BI
 • Parquet Format – Optimized Storage
 
 Results
 • Transformed 3 raw CSVs -> single Parquet dataset.
- • Reduced query cost by 80 % using Parquet compression.
+• Reduced query cost by 80 % using Parquet compression.
 • Achieved end-to-end automation with no servers.
 • Delivered live dashboards for music analytics within minutes.
